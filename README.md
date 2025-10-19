@@ -33,9 +33,9 @@ nginx-1.28.0/
 
 │ └─ welcome.html
 
-├─ logs/ # Nginx log files (ignored in git)
+├─ Dockerfile            
 
-└─ nginx.exe # Nginx executable (ignored in git)
+└─ docker-compose.yml 
 
 
 ## Steps to Run the Project
@@ -125,6 +125,7 @@ You should see:
 
 * `/` → Nginx is running. Use /hello or /welcome
 
+
 ### 7. Debugging Tips
 * If you see errors like `conflicting server name "localhost"` → stop extra nginx processes.
 
@@ -134,6 +135,12 @@ You should see:
 
 ---
 
-**Author**: Divyansh
+## Build & Run (with one command)
+```
+docker-compose up --build -d
+
+```
+
+**Author**: Divyansh Sharma 
 
 **Date**: October 2025
